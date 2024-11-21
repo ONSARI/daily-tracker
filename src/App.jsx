@@ -190,7 +190,7 @@ function Dashboard() {
     let csvContent = 'Data,Value\n';
 
     dataToExport.forEach(item => {
-      csvContent += ${item.label},${item.value}\n;
+      csvContent += `${item.label},${item.value}\n`;
     });
 
     const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });

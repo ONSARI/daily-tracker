@@ -198,7 +198,7 @@ function Dashboard() {
 
     const link = document.createElement('a');
     link.href = url;
-    link.setAttribute(link.setAttribute('download', `dashboard_data_${selectedDate || 'N_A'}.csv`);
+    link.setAttribute('download', `dashboard_data_${selectedDate || 'N_A'}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
